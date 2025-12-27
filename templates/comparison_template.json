@@ -1,0 +1,11 @@
+{
+  "template_name": "ComparisonPage",
+  "description": "Template for comparing similar products",
+  "fields": [
+    "product_name",
+    "key_ingredients",
+    "benefits",
+    "price",
+    "suitability"
+  ]
+}
