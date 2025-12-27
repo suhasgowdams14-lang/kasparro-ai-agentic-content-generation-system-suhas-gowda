@@ -7,13 +7,12 @@ class ProductParserAgent:
 
     def run(self, raw_data: dict) -> dict:
         return {
-            "name": raw_data["Product Name"],
-            "active_concentration": int(raw_data["Concentration"].replace("%", "")),
-            "skin_type": [s.strip() for s in raw_data["Skin Type"].split(",")],
-            "ingredients": [i.strip() for i in raw_data["Key Ingredients"].split(",")],
-            "benefits": [b.strip() for b in raw_data["Benefits"].split(",")],
-            "usage": raw_data["How to Use"],
-            "side_effects": raw_data["Side Effects"],
-            "price_inr": int(raw_data["Price"].replace("₹", ""))
+            "name": raw_data["name"],
+            "active_concentration": raw_data["active_concentration"],
+            "skin_type": raw_data["skin_type"],
+            "ingredients": raw_data["ingredients"],
+            "benefits": raw_data["benefits"],
+            "usage": raw_data["usage"],
+            "side_effects": raw_data["side_effects"],
+            "price_inr": raw_data["price_inr"]
         }
-
