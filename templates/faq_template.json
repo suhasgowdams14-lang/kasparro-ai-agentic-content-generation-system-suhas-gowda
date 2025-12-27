@@ -1,0 +1,9 @@
+{
+  "template_name": "FAQPage",
+  "description": "Template for Frequently Asked Questions page",
+  "min_questions": 5,
+  "fields": [
+    "question",
+    "answer"
+  ]
+}
